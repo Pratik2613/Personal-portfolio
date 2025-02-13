@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: #333;
+            color: #fff;
+            padding: 50px 20px;
+        }
+
+        .hero span {
+            color: #ff9800;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: #ff9800;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* About Section */
+        .about {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 20px;
+            background: white;
+        }
+
+        .about img {
+            width: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        /* Projects Section */
+        .projects {
+            padding: 50px 20px;
+            background: #eee;
+        }
+
+        .projects h2 {
+            margin-bottom: 20px;
+        }
+
+        .project {
+            display: flex;
+            align-items: center;
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .project img {
+            width: 200px;
+            border-radius: 10px;
+        }
+
+        .project div {
+            padding: 20px;
+        }
+
+        .reverse {
+            flex-direction: row-reverse;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: #333;
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .about {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .about img {
+                margin-bottom: 20px;
+            }
+
+            .project {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .reverse {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <h1>Hi, I'm <span>Pratik Golatkar</span></h1>
+        <p>Web Developer | Designer | Problem Solver</p>
+        <a href="#projects" class="btn">View My Work</a>
+    </header>
+
+    <section class="about">
+        <img src="profile.jpg" alt="Profile Image">
+        <div>
+            <h2>About Me</h2>
+            <p>A short bio about your skills and experience.</p>
+        </div>
+    </section>
+
+    <section class="projects">
+        <h2>My Projects</h2>
+        <div class="project zigzag">
+            <img src="project1.jpg" alt="Project 1">
+            <div>
+                <h3>Project One</h3>
+                <p>Description of the project.</p>
+            </div>
+        </div>
+        <div class="project zigzag reverse">
+            <div>
+                <h3>Project Two</h3>
+                <p>Description of the project.</p>
+            </div>
+            <img src="project2.jpg" alt="Project 2">
+        </div>
+        <div class="project zigzag">
+            <img src="project3.jpg" alt="Project 3">
+            <div>
+                <h3>Project Three</h3>
+                <p>Description of the project.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: your.email@example.com</p>
+        <p>Social Links: GitHub | LinkedIn | Twitter</p>
+    </footer>
+
+</body>
+</html>
